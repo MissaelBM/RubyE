@@ -23,4 +23,10 @@ end
 # Mostrar los resultados
 puts "Números multiplicados por 2: #{numeros_multiplicados}"
 
-
+numeros = [1, 2, 3, 4, 5, 6] 
+# Utilizar un bloque para filtrar solo los números pares 
+numeros_pares = numeros.select do |numero| 
+  numero.even? 
+end 
+  # Mostrar los números pares 
+  puts "Números pares: #{numeros_pares}"
